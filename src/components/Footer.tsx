@@ -9,6 +9,7 @@ import {
   ListIcon,
   Center,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -25,26 +26,29 @@ export default function Footer({}: Props) {
     {
       header: "WebFrameWork",
       list: [
-        { list: "Chakra-UI", link: "" },
-        { list: "Tailwind", link: "" },
-        { list: "NextJs", link: "" },
-        { list: "Framer-Motion", link: "" },
+        { list: "Chakra-UI", link: "https://chakra-ui.com/" },
+        { list: "Tailwind", link: "https://tailwindcss.com/" },
+        { list: "NextJs", link: "https://nextjs.org/" },
+        { list: "Framer-Motion", link: "https://www.framer.com/motion/" },
       ],
     },
     {
       header: "Contact-Me",
       list: [
-        { list: "Facebook", link: "" },
-        { list: "GitHub", link: "" },
-        { list: "Email", link: "" },
+        {
+          list: "Facebook",
+          link: "https://web.facebook.com/profile.php?id=100021946217046",
+        },
+        { list: "GitHub", link: "https://github.com/acartdev/" },
+        { list: "Email", link: "tnpkng@gmail.com" },
         { list: "Line", link: "https://line.me/ti/p/9MYGyI-W25" },
       ],
     },
     {
       header: "Tools",
       list: [
-        { list: "VsCode", link: "" },
-        { list: "Figma", link: "" },
+        { list: "VsCode", link: "https://code.visualstudio.com/" },
+        { list: "Figma", link: "https://www.figma.com/" },
       ],
     },
   ];
@@ -71,7 +75,7 @@ export default function Footer({}: Props) {
                       textAlign={"left"}
                     >
                       <ListIcon />
-                      {e.list}
+                      <Link href={e.link}> {e.list}</Link>
                     </ListItem>
                   ))}
                 </List>
