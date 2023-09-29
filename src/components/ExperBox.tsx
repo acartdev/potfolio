@@ -72,7 +72,7 @@ export default function ExperBox({ flexDi, desc, img, id }: Props) {
         textAlign={{ base: "start", lg: "unset" }}
         m={{ base: "1rem 0", lg: "0 2rem" }}
         wordBreak={{ base: "break-all", lg: "normal" }}
-        fontSize={{ lg: "xl", base: "lg" }}
+        fontSize={{ lg: "xl", base: "sm" }}
       >
         {desc}
       </Text>

@@ -71,7 +71,7 @@ export default function PortFolio(props: Props) {
         <Divider {...divider} />
         <Box pos={"relative"}>
           <Grid
-            w={{ base: "90%", lg: "50%" }}
+            w={{ base: "90%", lg: "70%" }}
             templateColumns={{ lg: "repeat(4,1fr)", base: "repeat(2,1fr)" }}
             mt={10}
             gap={4}
