@@ -77,10 +77,13 @@ export default function HeroPage({}: Props) {
             src={"/banner.jpg"}
             alt="banner "
             objectFit={useBreakpointValue({
-              base: "contain",
+              base: "cover",
               lg: "cover",
             })}
-            objectPosition={"0 10%"}
+            objectPosition={useBreakpointValue({
+              base: "10% 15%",
+              lg: "0 15%",
+            })}
             layout="fill"
             style={{ filter: "brightness(0.25)" }}
           />
